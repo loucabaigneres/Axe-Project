@@ -21,36 +21,12 @@
         <main
             class="col-10 col-sm-8 col-md-6 col-lg-6 col-xl-4 col-xxl-4 m-auto"
         >
-            <form action="./php/register.php" method="POST">
+            <form action="./php/login.php" method="POST">
                 <div class="d-flex flex-column align-items-start">
                     <h1 class="align-self-center mb-4">MicroMovie</h1>
                     <h2 class="h4 mb-3 fw-normal opacity-50">
-                        Création de compte
+                        Connexion au compte
                     </h2>
-
-                    <div class="form-floating w-100 mb-3">
-                        <input
-                            type="text"
-                            class="form-control bg-dark text-white border-0 bg-opacity-50"
-                            id="name"
-                            placeholder=" "
-                            name="user_name"
-                        />
-                        <label for="name" class="opacity-25">Prénom</label>
-                    </div>
-
-                    <div class="form-floating w-100 mb-3">
-                        <input
-                            type="text"
-                            class="form-control bg-dark text-white border-0 bg-opacity-50"
-                            id="username"
-                            placeholder=" "
-                            name="user_nickname"
-                        />
-                        <label for="username" class="opacity-25"
-                            >Nom d'utilisateur</label
-                        >
-                    </div>
 
                     <div class="form-floating w-100 mb-3">
                         <input
@@ -78,26 +54,13 @@
                         >
                     </div>
 
-                    <div class="form-floating w-100 mb-3">
-                        <input
-                            type="text"
-                            class="form-control bg-dark text-white border-0 bg-opacity-50"
-                            id="picture"
-                            placeholder=" "
-                            name="user_pic"
-                        />
-                        <label for="repassword" class="opacity-25"
-                            >Photo de profil</label
-                        >
-                    </div>
-
                     <button
                         class="w-100 btn btn-lg btn-primary"
                         type="submit"
                         id="submit"
-                        name="create"
+                        name="connect"
                     >
-                        Créer un compte
+                        Se connecter
                     </button>
 
                     <hr class="align-self-stretch m-4 border-opacity-10" />
@@ -106,7 +69,7 @@
                         class="d-flex w-100 justify-content-between align-items-center flex-column flex-sm-row gap-2"
                     >
                         <a href="/login" class="text-decoration-none"
-                            >Déjà un compte ?</a
+                            >S'inscrire</a
                         >
                         <a href="/" class="text-decoration-none"
                             >Retour à l'accueil</a
