@@ -24,10 +24,12 @@
         />
 
         <script defer src="./js/sidebar.js"></script>
+        <script defer src="./js/modal.js"></script>
     </head>
     
     <body>
         <?php require_once('./sidebar.template.php') ?>
+
         <header>
             <a href="">
                 <img
@@ -43,5 +45,12 @@
             />
             <a id="cross" href="#"><span id="burger"></span></a>
         </header>
+
+        <div id="button-modal">
+            <i class="fi fi-rr-plus-small"></i>
+        </div>
+
+        <?php require_once('./php/post/modal.template.php') ?>
+
     </body>
 </html>

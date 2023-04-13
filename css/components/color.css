@@ -13,7 +13,7 @@
         rgba(32, 33, 49, 0.4) 100%
     );
 
-    /* Background de la sidebar */
+    /* Background de la sidebar et du modal de publication */
     --background-sidebar: linear-gradient(
         138.59deg,
         #4d4072 0%,
@@ -24,7 +24,7 @@
     --background-menu: rgba(0, 0, 0, 0.2);
 
     /* Background bouton retour en arrière */
-    --background-button: #5B5E9D;
+    --background-button: #5b5e9d;
 
     /* Noir pur */
     --black: rgba(0, 0, 0);

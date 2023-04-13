@@ -7,9 +7,7 @@
         />
         <div class="profile-info">
             <h3>Connecté en tant que</h3>
-            <?php 
-            echo "<h2>" . $user_name["user_name"] . "</h2>";
-            ?>
+            <!-- <?= "<h2>" . $user_name["user_name"] . "</h2>" ?> -->
             <h2 class="username"><? $user_name ?></h2>
             <div class="stats-abo">
                 <div class="abonnes">
