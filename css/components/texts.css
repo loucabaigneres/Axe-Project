@@ -1,0 +1,20 @@
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-handle);
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+}

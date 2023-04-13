@@ -1,0 +1,55 @@
+:root {
+    /* Background général de la page */
+    --background-first: #321c4d;
+    --background-second: #120f17;
+
+    /* Background de différents éléments (header, tags...) */
+    --background-dark: rgba(0, 0, 0, 0.3);
+
+    /* Background des publications */
+    --background-publication: linear-gradient(
+        114.29deg,
+        rgba(48, 50, 74, 0.4) 0%,
+        rgba(32, 33, 49, 0.4) 100%
+    );
+
+    /* Background de la sidebar */
+    --background-sidebar: linear-gradient(
+        138.59deg,
+        #4d4072 0%,
+        #382655 57.57%
+    );
+
+    /* Background du menu de la sidebar */
+    --background-menu: rgba(0, 0, 0, 0.2);
+
+    /* Background bouton retour en arrière */
+    --background-button: #5B5E9D;
+
+    /* Noir pur */
+    --black: rgba(0, 0, 0);
+
+    /* Blanc pur */
+    --white: rgba(255, 255, 255);
+
+    /* Couleur des textes */
+    --text-white: rgba(255, 255, 255, 0.9);
+
+    /* Couleur des textes handle */
+    --text-handle: #c0c0c0;
+
+    /* Couleurs des tags */
+    --tag-0: #25476f;
+    --tag-1: #6f2525;
+    --tag-2: #4a256f;
+    --tag-3: #2b6f25;
+    --tag-4: #6f253b;
+    --tag-5: #25436f;
+    --tag-6: #57256f;
+    --tag-7: #6f3725;
+    --tag-8: #41256f;
+    --tag-9: #6f5f25;
+    --tag-10: #256f6b;
+
+    /* --background */
+}

@@ -28,6 +28,6 @@ if (isset($_POST['connect'])) {
     
     // Tout a été vérifié, on enregistre une session
     $_SESSION['user_id'] = $user_insert->fetch()['user_id'];
-    header('Location: ../index.html');
+    header('Location: ../index.php');
 }
 ?>

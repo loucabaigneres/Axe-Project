@@ -1,0 +1,99 @@
+.sidebar {
+    background: var(--background-sidebar);
+    position: fixed;
+    width: 85vw;
+    height: 87.5vh;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 75px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.sidebar.active {
+    right: -85vw;
+}
+
+.profile-sidebar {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.stats-abo {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.abonnes {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.abonnes-stats-strong {
+    font-weight: 600;
+}
+
+.bar-abo {
+    background: var(--text-white);
+    padding: 0.5px;
+}
+
+.abonnements {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.abonnements-stats-strong {
+    font-weight: 600;
+}
+
+.sidebar-menu {
+    background: var(--background-dark);
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #ffff;
+}
+
+.menu-list > h2,
+.menu-list > h3 {
+    font-size: 24px;
+}
+
+.menu-list > i {
+    font-size: 32px;
+}

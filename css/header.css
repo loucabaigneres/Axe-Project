@@ -1,0 +1,15 @@
+header {
+    width: 100vw;
+    height: 12.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    background-color: var(--background-dark);
+}
+
+#header-transition {
+    width: 100vw;
+    padding: 1px;
+    background-color: var(--black);
+}

@@ -28,6 +28,6 @@ if (isset($_POST['create'])) {
 
     // Tout a été vérifié, on enregistre une session
     $_SESSION['user_id'] = $last_id;
-    header('Location: ../index.html');
+    header('Location: ../index.php');
 }
 ?>

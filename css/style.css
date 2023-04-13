@@ -1,0 +1,37 @@
+/* Ajout des styles des composants */
+@import url(./components/color.css);
+@import url(./components/texts.css);
+@import url(./components/images.css);
+@import url(./components/burger.css);
+@import url(./components/sidebar.css);
+
+@import url(./header.css);
+
+/* Ajout des fonts */
+@import url("./fonts/montserrat.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(
+        167.95deg,
+        var(--background-first) 7.64%,
+        var(--background-second) 87.85%
+    );
+
+    color: var(--text-white);
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
