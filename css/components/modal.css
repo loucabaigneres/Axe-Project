@@ -16,12 +16,30 @@
 
 #button-modal:hover {
     filter: brightness(1.1);
-    transform: scale(1.1, 1.1);
 }
 
 #button-modal > i {
     padding-top: 12px;
     font-size: 50px;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 3;
+    transition: 0.2s;
+}
+
+.hidden {
+    display: none;
 }
 
 .modal {
@@ -64,19 +82,6 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-}
-
-.posting {
-    background: var(--background-menu);
-    width: 280px;
-    height: 280px;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.25);
-    color: var(--text-white);
-    resize: none;
-    border: none;
-    outline: none;
 }
 
 .posting > p {
@@ -146,22 +151,4 @@
 #not-distribute > p {
     font-weight: 600;
     font-size: 1.1em;
-}
-
-.overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
-    z-index: 3;
-}
-
-.hidden {
-    display: none;
 }

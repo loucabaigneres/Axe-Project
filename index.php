@@ -1,56 +1,60 @@
-<?php require_once('./conf/database.php') ?>
+<?php 
+require_once './conf/database.php';
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Louca's Portfolio</title>
 
-        <link rel="stylesheet" href="./css/style.css" />
+// Back-end de classement des posts
 
-        <link
-            rel="stylesheet"
-            href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
-        />
+$request = $database->prepare("SELECT * FROM post ORDER BY post_date DESC");
+$request->execute();
+$posts = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        <script defer src="./js/sidebar.js"></script>
-        <script defer src="./js/modal.js"></script>
-    </head>
-    
-    <body>
-        <?php require_once('./sidebar.template.php') ?>
 
-        <header>
-            <a href="">
-                <img
-                    class="header-pp"
-                    src="<? $user_pic ?>"
-                    alt="🖼️"
-                />
-            </a>
-            <img
-                class="logo"
-                src="./images/micromovie_temp.png"
-                alt="MicroMovie"
-            />
-            <a id="cross" href="#"><span id="burger"></span></a>
-        </header>
+// Back-end de recherche d'un post
 
-        <div id="button-modal">
-            <i class="fi fi-rr-plus-small"></i>
-        </div>
+if ($_SERVER['REQUEST_METHOD'] == "GET") {
+    if (!empty($_GET['recherche'])) {
+        $data = [
+            "recherche" => "%" . $_GET['recherche'] . "%",
+        ];
 
-        <?php require_once('./php/post/modal.template.php') ?>
+        $request_search = $database->prepare("SELECT * FROM post WHERE post_content LIKE :recherche");
+        $request_search->execute($data);
+        $posts = $request_search->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
 
-    </body>
-</html>
+
+// Back-end de création d'un post
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['form']) && $_POST['form'] === "formulaire_ajout_post") {
+        if (!empty($_POST['post_content'])) {
+            $post_content = $_POST['post_content'];
+
+            $data = [
+                "post_content" => $post_content
+            ];
+
+            $request_insert = $database->prepare("INSERT INTO post (post_content, post_date) VALUES (:post_content, NOW())");
+            $post_inserted = $request_insert->execute($data);
+        }
+    }
+}
+
+// Back-end de suppression d'un post
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['form']) && $_POST['form'] === "formulaire_suppression_post") {
+        if (!empty($_POST['post_id'])) {
+            $data = [
+                "post_id" => $_POST['post_id']
+            ];
+
+            $request_delete = $database->prepare("DELETE FROM post WHERE post_id = :post_id");
+            $post_deleted = $request_delete->execute($data);
+            header('Location: ./index.php');
+        }
+    }
+}
+
+require_once './index.template.php';

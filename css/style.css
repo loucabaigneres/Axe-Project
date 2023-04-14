@@ -7,8 +7,10 @@
 @import url(./components/tags.css);
 @import url(./components/texts.css);
 @import url(./components/inputs/input-submit.css);
+@import url(./components/inputs/input-textarea.css);
 
 @import url(./header.css);
+@import url(./profile.css);
 
 /* Ajout des fonts */
 @import url("./fonts/montserrat.css");

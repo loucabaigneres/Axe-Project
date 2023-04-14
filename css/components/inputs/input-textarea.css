@@ -1,0 +1,12 @@
+textarea {
+    background: var(--background-menu);
+    width: 280px;
+    height: 280px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.25);
+    color: var(--text-white);
+    resize: none;
+    border: none;
+    outline: none;
+}
