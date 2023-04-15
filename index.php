@@ -1,5 +1,5 @@
 <?php 
-require_once './conf/database.php';
+require_once ('./conf/database.php');
 
 
 // Back-end de classement des posts
@@ -57,4 +57,4 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 }
 
-require_once './index.template.php';
+require_once ('./index.template.php');

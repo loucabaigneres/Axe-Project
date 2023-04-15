@@ -24,7 +24,7 @@
         <script defer src="./js/delete.js"></script>
     </head>
     <body>
-        <div class="overlay-delete hidden">
+        <div class="overlay-delete delete-hidden">
             <div class="delete-modal">
                 <h2>Supprimer le post</h2>
                 <div class="delete-choice">
@@ -38,35 +38,27 @@
             </div>
         </div>
 
-        <div class="div-banner">
+        <section class="profile-scroll">
             <img
                 src="./images/profile-banner/wallpaperflare.com_wallpaper.jpg"
                 alt="Banner"
                 class="banner"
             />
-        </div>
-        <a href="./index.html">
-            <div class="exit">
-                <i class="fi fi-rr-angle-right"></i>
-            </div>
-        </a>
-        <section class="profile-scroll">
+            <a href="./index.php">
+                <div class="exit">
+                    <i class="fi fi-rr-angle-right"></i>
+                </div>
+            </a>
             <div class="profile">
                 <div class="profile-config">
                     <img src="./images/pp/PP_Louca.jpg" alt="Photo de profil" />
-                    <div class="config">
+                    <button class="config">
                         <h4>Modifier le profil</h4>
-                    </div>
+                    </button>
                 </div>
                 <div class="id id-profile">
                     <div class="display-name">
                         <h2 class="username">Louca</h2>
-                        <div class="barre-name"></div>
-                        <img
-                            src="./images/emojis/Emoji-top.png"
-                            alt="mood_emoji"
-                            class="emoji"
-                        />
                     </div>
                     <div class="div-handle">
                         <h3 class="handle">@loucabgnrs</h3>
@@ -90,111 +82,95 @@
                     </div>
                 </div>
             </div>
-            <div class="divpublication" id="publication-profile">
-                <img src="./images/pp/PP_Louca.jpg" alt="Photo de profil" />
-                <div class="publication">
+            <div class="publication">
+                <div class="div-publication">
+                    <img class="pp" src="./images/pp/PPLou.png" alt="🖼️" />
+                    <div class="content-publication">
+                        <div class="id">
+                            <div class="name">
+                                <h2 class="username">Diamond</h2>
+                            </div>
+                            <div class="div-handle">
+                                <h3 class="handle">@diams</h3>
+                                <h3 class="dash">-</h3>
+                                <h3 class="time">16mn</h3>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <p>
+                                Bon... J'ai craqué, c'est parti pour 3h40 de
+                                plaisir !
+                            </p>
+                            <img src="./images/img-post/avatar.jpg" alt="🖼️" />
+                        </div>
+                    </div>
                     <img
                         class="poubelle"
-                        id="poubelle-1"
-                        src="./images/icon/poubelle.png"
+                        src="./images/icons/poubelle.png"
                         alt="🗑️"
                     />
-                    <div class="id">
-                        <div class="display-name">
-                            <h2 class="username">Louca</h2>
-                            <div class="barre-name"></div>
-                            <img
-                                src="./images/emojis/Emoji-top.png"
-                                alt="mood_emoji"
-                                class="emoji"
-                            />
-                        </div>
-                        <div class="div-handle">
-                            <h3 class="handle">@loucabgnrs</h3>
-                            <h3 class="dash">-</h3>
-                            <h3 class="time">4h</h3>
-                        </div>
-                    </div>
-                    <div class="tag tag-5 tag-post">Indé</div>
-                    <p>
-                        Ça m'énerve, je dis tout le temps que je n'aime que les
-                        grosses productions, mais je n'arrive pas à m'arrêter
-                        d'y jouer :(
-                    </p>
-                    <img
-                        class="img-post"
-                        src="./images/img-publications/celeste.gif"
-                        alt="Forspoken"
-                    />
-                    <div class="stats">
-                        <div class="comment">
-                            <h5 class="comment-stats">250</h5>
-                            <img
-                                src="./images/icons/comments.png"
-                                alt="comments"
-                            />
-                        </div>
-                        <div class="like">
-                            <h5 class="like-stats">6.7K</h5>
-                            <img
-                                src="./images/icons/like-empty.png"
-                                alt="likes"
-                            />
-                        </div>
-                    </div>
                 </div>
+                <div class="transition"></div>
             </div>
-            <div class="divpublication id="publication-profile"">
-                <img src="./images/pp/PP_Louca.jpg" alt="Photo de profil" />
-                <div class="publication">
-                    <img
-                        class="poubelle"
-                        id="poubelle-2"
-                        src="./images/icon/poubelle.png"
-                        alt="🗑️"
-                    />
-                    <div class="id">
-                        <div class="display-name">
-                            <h2 class="username">Louca</h2>
-                            <div class="barre-name"></div>
-                            <img
-                                src="./images/emojis/Emoji-top.png"
-                                alt="mood_emoji"
-                                class="emoji"
-                            />
+            <div class="publication">
+                <div class="div-publication">
+                    <img class="pp" src="./images/pp/PPLou.png" alt="🖼️" />
+                    <div class="content-publication">
+                        <div class="id">
+                            <div class="name">
+                                <h2 class="username">Diamond</h2>
+                            </div>
+                            <div class="div-handle">
+                                <h3 class="handle">@diams</h3>
+                                <h3 class="dash">-</h3>
+                                <h3 class="time">16mn</h3>
+                            </div>
                         </div>
-                        <div class="div-handle">
-                            <h3 class="handle">@loucabgnrs</h3>
-                            <h3 class="dash">-</h3>
-                            <h3 class="time">2j</h3>
+                        <div class="post">
+                            <p>
+                                Bon... J'ai craqué, c'est parti pour 3h40 de
+                                plaisir !
+                            </p>
+                            <img src="./images/img-post/avatar.jpg" alt="🖼️" />
                         </div>
                     </div>
-                    <div class="tag tag-3 tag-post">RPG</div>
-                    <p>
-                        Officiellement le meilleur jeu de l’année à mes yeux 🤩
-                    </p>
                     <img
-                        class="img-post"
-                        src="./images/img-publications/forspoken.png"
-                        alt="Forspoken"
+                        class="poubelle"
+                        src="./images/icons/poubelle.png"
+                        alt="🗑️"
                     />
-                    <div class="stats">
-                        <div class="comment">
-                            <h5 class="comment-stats">250</h5>
-                            <img
-                                src="./images/icons/comments.png"
-                                alt="comments"
-                            />
+                </div>
+                <div class="transition"></div>
+            </div>
+            <div class="publication">
+                <div class="div-publication">
+                    <img class="pp" src="./images/pp/PPLou.png" alt="🖼️" />
+                    <div class="content-publication">
+                        <div class="id">
+                            <div class="name">
+                                <h2 class="username">Diamond</h2>
+                            </div>
+                            <div class="div-handle">
+                                <h3 class="handle">@diams</h3>
+                                <h3 class="dash">-</h3>
+                                <h3 class="time">16mn</h3>
+                            </div>
                         </div>
-                        <div class="like">
-                            <h5 class="like-stats">6.7K</h5>
-                            <img
-                                src="./images/icons/like-empty.png"
-                                alt="likes"
-                            />
+                        <div class="post">
+                            <p>
+                                Bon... J'ai craqué, c'est parti pour 3h40 de
+                                plaisir !
+                            </p>
+                            <img src="./images/img-post/avatar.jpg" alt="🖼️" />
                         </div>
                     </div>
                 </div>
+                <img
+                    class="poubelle"
+                    src="./images/icons/poubelle.png"
+                    alt="🗑️"
+                />
+                <div class="transition"></div>
             </div>
         </section>
     </body>

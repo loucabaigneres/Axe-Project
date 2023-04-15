@@ -6,9 +6,13 @@ const openDeleteModal = document.querySelector(".poubelle");
 const closeDeleteModal = document.querySelector(".non");
 
 openDeleteModal.addEventListener("click", () => {
-    deleteModal.classList.remove("hidden");
+    deleteModal.classList.remove("delete-hidden");
 });
 
 closeDeleteModal.addEventListener("click", () => {
-    deleteModal.classList.add("hidden");
+    deleteModal.classList.add("delete-hidden");
+});
+
+openDeleteModal.addEventListener("click", () => {
+    console.log("Salut");
 });
