@@ -14,3 +14,12 @@ button {
 button:hover {
     filter: brightness(1.1);
 }
+
+input[type="submit"] {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    align-self: flex-end;
+}

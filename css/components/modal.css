@@ -43,8 +43,9 @@
 }
 
 .modal {
+    width: 90%;
     z-index: 1;
-    background: var(--background-sidebar);
+    background: var(--background-elements);
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.25);
@@ -54,10 +55,10 @@
     align-items: center;
     gap: 12px;
 }
-
+/* 
 .modal > h2 {
     font-size: 1.4em;
-}
+} */
 
 .white-bar {
     background: #ffff;
@@ -81,13 +82,15 @@
 .whole-post {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 4px;
 }
 
-.posting > p {
-    font-weight: 400;
-    font-size: 0.9em;
-    font-family: "Montserrat";
+.whole-post > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
 
 .add-file {
@@ -124,31 +127,19 @@
 #distribute {
     background: rgba(0, 0, 0, 0.4);
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 10px;
     border-radius: 5px;
     gap: 10px;
     cursor: pointer;
-}
-
-#distribute > p {
-    font-weight: 600;
-    font-size: 1.1em;
 }
 
 #not-distribute {
     background: rgba(0, 0, 0, 0.4);
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 10px;
     border-radius: 5px;
     gap: 10px;
     cursor: pointer;
-}
-
-#not-distribute > p {
-    font-weight: 600;
-    font-size: 1.1em;
 }

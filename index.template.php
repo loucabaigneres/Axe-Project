@@ -26,6 +26,8 @@
         <script defer src="./js/sidebar.js"></script>
         <script defer src="./js/modal.js"></script>
         <script defer src="./js/filter.js"></script>
+        <script defer src="./js/popup.js"></script>
+        <script defer src="./js/localstorage.js"></script>
     </head>
     
     <body>
@@ -49,6 +51,21 @@
 
         <div id="button-modal">
             <i class="fi fi-rr-plus-small"></i>
+        </div>
+    
+        <div class="overlay-popup">
+            <div class="sign-up-popup">
+                <h2>On dirait que vous n'êtes pas connecté...</h2>
+                <h3>Connectez-vous pour accéder à plus de fonctionnalités !</h3>
+                <div>
+                    <button class="close-popup">
+                        <p>Plus tard</p>
+                    </button>
+                    <button class="go-sign-up">
+                        <p>Se connecter</p>
+                    </button>
+                </div>
+            </div>
         </div>
 
         <?php require_once('./php/post/modal.template.php') ?>

@@ -6,3 +6,18 @@
 .logo {
     width: 50px;
 }
+
+.pp {
+    width: 40px;
+    border-radius: 25px;
+}
+
+.post > img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.banner {
+    width: 100%;
+    object-fit: cover;
+}

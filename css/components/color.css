@@ -14,7 +14,7 @@
     );
 
     /* Background de la sidebar et du modal de publication */
-    --background-sidebar: linear-gradient(
+    --background-elements: linear-gradient(
         138.59deg,
         #4d4072 0%,
         #382655 57.57%

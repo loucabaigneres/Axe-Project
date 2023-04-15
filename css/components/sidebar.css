@@ -1,5 +1,5 @@
 .sidebar {
-    background: var(--background-sidebar);
+    background: var(--background-elements);
     position: fixed;
     width: 85vw;
     height: 87.5vh;

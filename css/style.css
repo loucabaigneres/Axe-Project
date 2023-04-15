@@ -6,8 +6,11 @@
 @import url(./components/sidebar.css);
 @import url(./components/tags.css);
 @import url(./components/texts.css);
+@import url(./components/publication.css);
+@import url(./components/popup.css);
 @import url(./components/inputs/input-submit.css);
 @import url(./components/inputs/input-textarea.css);
+@import url(./components/inputs/input-file.css);
 
 @import url(./header.css);
 @import url(./profile.css);

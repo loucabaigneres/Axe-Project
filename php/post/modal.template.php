@@ -35,25 +35,27 @@
             </button>
         </div>
         <div class="whole-post">
-            <form action="" method="POST">
+            <form class="formPost" action="" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="form" value="formulaire_ajout_post">
                 <textarea placeholder="Écrivez ici..." name="post_content" id="post_content" class="posting" cols="30" rows="10" required></textarea>
-                <input id="distribute" class="send_button" type="submit" value="Envoyer">
+                <label for="file">Ajouter un média</label>
+                <input type="file" accept="image/png, image/jpeg, image/gif" class="upload-file">
+                <input id="distribute" class="send_button" type="submit" value="Poster">
             </form>
-            <div class="add-file">
+            <!-- <div class="add-file">
                 <div>
                     <i class="fi fi-rr-picture"></i>
                     <p>Média</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="div-distribute">
             <div id="not-distribute">
                 <p>Hm, non</p>
             </div>
-            <div id="distribute" class="send_button" type="submit" value="Envoyer">
+            <!-- <button id="distribute" class="send_button" type="submit" value="Envoyer">
                 <p>Poster</p>
-            </div>
+            </button> -->
         </div>
     </div>
 </div>
