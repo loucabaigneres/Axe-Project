@@ -1,0 +1,11 @@
+@import url(./components/color.css);
+
+body {
+    background: linear-gradient(
+        167.95deg,
+        var(--background-first) 7.64%,
+        var(--background-second) 87.85%
+    );
+
+    color: var(--text-white);
+}
