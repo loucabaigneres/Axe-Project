@@ -1,3 +1,8 @@
+.accueil {
+    height: 87.5vh;
+    overflow-y: scroll;
+}
+
 .publication {
     background: var(--background-publication) !important;
     width: 100vw;

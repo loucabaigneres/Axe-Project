@@ -57,6 +57,28 @@
             </div>
             <div class="transition"></div>
         </div>
+        <div class="publication tag-2">
+            <div class="div-publication">
+                <img class="pp" src="./images/pp/PPLou.png" alt="🖼️" />
+                <div class="content-publication">
+                    <div class="id">
+                        <div class="name">
+                            <h2 class="username">Diamond</h2>
+                        </div>
+                        <div class="div-handle">
+                            <h3 class="handle">@diams</h3>
+                            <h3 class="dash">-</h3>
+                            <h3 class="time">16mn</h3>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <p> J'ai des frissons rien qu'en repensant à ce chef-d'œuvre... </p>
+                        <img src="./images/img-post/suzume.jpg" alt="🖼️" />
+                    </div>
+                </div>
+            </div>
+            <div class="transition"></div>
+        </div>
     </div>
     <?php
     foreach ($posts as $post) {
