@@ -44,3 +44,13 @@
     gap: 10px;
     cursor: pointer;
 }
+
+.sign-up-popup > div > a > button {
+    background-color: var(--background-menu);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+    cursor: pointer;
+}
