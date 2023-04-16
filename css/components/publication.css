@@ -1,5 +1,5 @@
 .publication {
-    background: var(--background-publication);
+    background: var(--background-publication) !important;
     width: 100vw;
     display: flex;
     flex-direction: column;

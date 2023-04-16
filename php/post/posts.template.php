@@ -35,7 +35,7 @@
             </div>
             <div class="transition"></div>
         </div>
-        <div class="publication tag-9">
+        <div class="publication tag-2">
             <div class="div-publication">
                 <img class="pp" src="./images/pp/PPLou.png" alt="🖼️" />
                 <div class="content-publication">
