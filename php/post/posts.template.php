@@ -1,6 +1,6 @@
 <section class="accueil">
     <div class="tags">
-        <button class="tag tag-0">Tout</button>
+        <button class="tag tag-0">Tout afficher</button>
         <button class="tag tag-1">Action</button>
         <button class="tag tag-2">Animation</button>
         <button class="tag tag-3">Aventure</button>
@@ -12,6 +12,24 @@
         <button class="tag tag-9">Science-fiction</button>
         <button class="tag tag-10">Old-school</button>
     </div>
+    <form class="form_recherche" action="" method="get">
+        <input class="recherche" placeholder="Recherche de Kweets" type="text" name="recherche" id="recherche">
+    </form>
+    <?php
+    foreach ($posts as $post) {
+        echo "<p>" . $post["post_content"] . "</p>";
+        // echo "<img" . $post["post_pic"] . "/>";
+        echo date("d/m/Y", strtotime($post['post_date'])) .
+            " à " . date("H:i", strtotime($post['post_date']));
+    ?>
+    <form action="./index.php" method="POST">
+        <input type="hidden" name="form" value="formulaire_suppression_post">
+        <input type="hidden" name="post_id" value="<?= $post['post_id'] ?>">
+        <input type="submit" value="Supprimer">
+    </form>
+    <?php
+    }
+    ?>
     <div class="all-publications">
         <div class="publication tag-9">
             <div class="div-publication">
@@ -80,19 +98,4 @@
             <div class="transition"></div>
         </div>
     </div>
-    <?php
-    foreach ($posts as $post) {
-        echo "<p>" . $post["post_content"] . "</p>";
-        // echo "<img" . $post["post_pic"] . "/>";
-        echo date("d/m/Y", strtotime($post['post_date'])) .
-            " à " . date("H:i", strtotime($post['post_date']));
-    ?>
-    <form action="./index.php" method="POST">
-        <input type="hidden" name="form" value="formulaire_suppression_post">
-        <input type="hidden" name="post_id" value="<?= $post['post_id'] ?>">
-        <input type="submit" value="Supprimer">
-    </form>
-    <?php
-    }
-    ?>
 </section>

@@ -1,11 +1,13 @@
 .accueil {
+    width: 100vw;
     height: 87.5vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .publication {
     background: var(--background-publication) !important;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

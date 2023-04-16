@@ -37,7 +37,7 @@
             <a href="./profile.html">
                 <img
                     class="header-pp"
-                    src="<?= $user_pic ?>"
+                    src="./images/pp/PP_Louca.jpg"
                     alt="🖼️"
                 />
             </a>
