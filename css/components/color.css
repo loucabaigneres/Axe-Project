@@ -39,17 +39,17 @@
     --text-handle: #c0c0c0;
 
     /* Couleurs des tags */
-    --tag-0: #25476f;
-    --tag-1: #6f2525;
-    --tag-2: #4a256f;
-    --tag-3: #2b6f25;
-    --tag-4: #6f253b;
-    --tag-5: #25436f;
-    --tag-6: #57256f;
-    --tag-7: #6f3725;
-    --tag-8: #41256f;
-    --tag-9: #6f5f25;
-    --tag-10: #256f6b;
+    --tag-color-0: #25476f;
+    --tag-color-1: #6f2525;
+    --tag-color-2: #4a256f;
+    --tag-color-3: #2b6f25;
+    --tag-color-4: #6f253b;
+    --tag-color-5: #25436f;
+    --tag-color-6: #57256f;
+    --tag-color-7: #6f3725;
+    --tag-color-8: #41256f;
+    --tag-color-9: #6f5f25;
+    --tag-color-10: #256f6b;
 
     /* --background */
 }
