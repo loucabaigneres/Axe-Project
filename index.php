@@ -38,8 +38,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $request_insert = $database->prepare("INSERT INTO post (post_content, post_date) VALUES (:post_content, NOW())");
             $post_inserted = $request_insert->execute($data);
         }
+    }else{
+        echo "Veuillez compléter tous les champs...";
     }
 }
+
+// {
+//     $maxSize = 2097152;
+
+//     if($_FILES['post_pic']['error'] > 0){
+//         echo "Une erreur est survenue lors du transfert du fichier.";
+//         die();
+//     }
+
+//     $fileSize = $_FILES['post_pic']['size'];
+//     echo $fileSize;
+// }
 
 // Back-end de suppression d'un post
 
