@@ -58,12 +58,8 @@
                 <h2>On dirait que vous n'êtes pas connecté...</h2>
                 <h3>Connectez-vous pour accéder à plus de fonctionnalités !</h3>
                 <div>
-                    <button class="close-popup">
-                        <p>Plus tard</p>
-                    </button>
-                    <button class="go-sign-up">
-                        <p>Se connecter</p>
-                    </button>
+                    <button class="close-popup">Plus tard</button>
+                    <button class="go-sign-up">Se connecter</button>
                 </div>
             </div>
         </div>
