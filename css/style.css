@@ -43,3 +43,18 @@ body {
 a {
     text-decoration: none;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-second);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-button);
+    border-radius: 4px;
+}
