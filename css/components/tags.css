@@ -1,4 +1,4 @@
-.tag-list {
+.tags {
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -9,60 +9,56 @@
     background-color: var(--background-dark);
 }
 
-.tag {
-    gap: 8px;
-}
-
 .tag-0 {
-    background-color: var(--tag-0);
+    background-color: var(--tag-color-0);
 }
 
 .tag-1 {
-    background-color: var(--tag-1);
+    background-color: var(--tag-color-1);
     display: var(--tag-1, flex);
 }
 
 .tag-2 {
-    background-color: var(--tag-2);
+    background-color: var(--tag-color-2);
     display: var(--tag-2, flex);
 }
 
 .tag-3 {
-    background-color: var(--tag-3);
+    background-color: var(--tag-color-3);
     display: var(--tag-3, flex);
 }
 
 .tag-4 {
-    background-color: var(--tag-4);
+    background-color: var(--tag-color-4);
     display: var(--tag-4, flex);
 }
 
 .tag-5 {
-    background-color: var(--tag-5);
+    background-color: var(--tag-color-5);
     display: var(--tag-5, flex);
 }
 
 .tag-6 {
-    background-color: var(--tag-6);
+    background-color: var(--tag-color-6);
     display: var(--tag-6, flex);
 }
 
 .tag-7 {
-    background-color: var(--tag-7);
+    background-color: var(--tag-color-7);
     display: var(--tag-7, flex);
 }
 
 .tag-8 {
-    background-color: var(--tag-8);
+    background-color: var(--tag-color-8);
     display: var(--tag-8, flex);
 }
 
 .tag-9 {
-    background-color: var(--tag-9);
+    background-color: var(--tag-color-9);
     display: var(--tag-9, flex);
 }
 
 .tag-10 {
-    background-color: var(--tag-10);
+    background-color: var(--tag-color-10);
     display: var(--tag-10, flex);
 }
