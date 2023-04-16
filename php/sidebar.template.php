@@ -8,7 +8,7 @@
         <div class="profile-info">
             <h3>Connecté en tant que</h3>
             <!-- <?= "<h2>" . $user_name["user_name"] . "</h2>" ?> -->
-            <h2 class="username"><? $user_name ?></h2>
+            <h2 class="username">Louca</h2>
             <div class="stats-abo">
                 <div class="abonnes">
                     <h4 class="abonnes-stats-strong">15 533</h4>
